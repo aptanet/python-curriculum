@@ -1,5 +1,5 @@
 ---
-title: (Beta) The Year 2025 — Notes for Club Leaders
+title: The Year 2025 — Notes for Club Leaders
 language: en
 embeds: "*.png"
 ...
@@ -9,6 +9,11 @@ This project teaches children how to use variables within a Python program, and 
 
 #Resources
 For this project, Python will need to be installed. It is recommended that version 3.2 of Python is installed.
+
+You can find a completed version of this project's challenges by clicking the 'Download Project Materials' link for this project, which contains:
+
++ TheYear3000.py
++ AgeInDogYears.py
 
 #Learning Objectives
 + Data types;
@@ -23,12 +28,12 @@ For this project, Python will need to be installed. It is recommended that versi
 + The year 3000! - Adding a variable to a program;
 + Your age in dog years - applying the use of variables to a new problem.
 
-#Potential Problems
+#Frequently Asked Questions
 There are 2 different ways of printing numbers:
 
 + By passing numbers as separate parameters to the `print()` function, for example:
 
-```{.language-python}
+```python
 print("I am", 11, "years old")
 ```
 
@@ -36,7 +41,7 @@ In this case, a space is added between each parameter.
 
 + By casting the number to text with the `str()` function and then adding it to another text string, for example:
 
-```{.language-python}
+```python
 print("I am " + str(11) + " years old")
 ```
 

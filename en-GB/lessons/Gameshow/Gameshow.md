@@ -1,18 +1,15 @@
 ---
-title: (Beta) Gameshow
-level: Term 1
+title: Gameshow
+level: Python 1
 language: en
 stylesheet: python
 embeds: "*.png"
-materials: ["Gameshow.py"]
+materials: ["Project Resources/*.*","Club Leader Resources/*.*"]
 ...
-
-#Heads up! { .beta}
-This project is in Beta. That means we're still testing it, and there's a small chance there could be some bugs or typos. If you're a club leader trying out this project, please complete <a href="https://docs.google.com/forms/d/1eMCfpYe3v7eYu5M8rSqLKlmq7cczLCLHx66csgyUyVU/viewform?usp=send_form" target="_blank">this short questionnaire</a> (or email projects@codeclub.org.uk) to let us know how it went!
 
 #Introduction:  { .intro}
 
-As well as using `for` loops to repeat commands a set number of times, a `while` loop can also be used to repeat commands _until something happens in your program_.
+In this project you'll learn how to make a guessing game, in which you have to guess which door will reveal a prize.
 
 #Step 1: What's behind the door? { .activity}
 ## Activity Checklist { .check}
@@ -21,7 +18,7 @@ As well as using `for` loops to repeat commands a set number of times, a `while`
 
     You can play this game by running the following program:
 
-    ```{.language-python}
+    ```python
     from random import *
 
     #print the 3 doors and the game instructions
@@ -69,7 +66,7 @@ As well as using `for` loops to repeat commands a set number of times, a `while`
 
 + Using what you already know about loops, you could easily improve this game to allow the player to have 3 guesses, instead of just 1. Run the following program:
 
-    ```{.language-python}
+    ```python
     from random import *
 
     #print the 3 doors and the game instructions
@@ -116,15 +113,19 @@ As well as using `for` loops to repeat commands a set number of times, a `while`
 
     Also, `\n` in the line `print("\nChoose a door (1, 2 or 3):")` prints a new blank line to the screen. This is done to split up the printed text, to make it easier to read.
 
+## Save Your Project {.save}
+
 ## Challenge: Keeping score { .challenge}
 Create a variable to keep track of how many times the player guesses the correct door. If you need help, remember that this will work in a similar way to the `score` variable in your quiz program! Remember to show the player their final score, at the end of the program (outside of the loop).
+
+## Save Your Project {.save}
 
 #Step 2: `while` loops { .activity}
 ## Activity Checklist { .check}
 
 + Instead of making your program loop a set number of times, it might be more interesting to let the player choose how long they want to play for. To do this, you'll need to use a different loop, called a `while` loop. Try out this program:
 
-    ```{.language-python}
+    ```python
     from random import *
 
     #the user changes this variable to end the game
@@ -201,7 +202,7 @@ Can you modify your game, so that the player's score is set to 0 whenever they c
 
 + Instead of looping the game until the player decides to quit, you could instead loop the game until the player scores 3 points. The aim of the game could then be to score 3 points in as few attempts as possible:
 
-    ```{.language-python}
+    ```python
     from random import *
 
     #this variable stores the number of times the game is played
@@ -256,6 +257,8 @@ Can you modify your game, so that the player's score is set to 0 whenever they c
 
     The `while` loop in this program continues to run as long as the score is less than 3 (`while score < 3:`). Once the score gets to 3, the program ends, and the number of attempts is printed.
 
+## Save Your Project {.save}
+
 ## Challenge: Twenty-one { .challenge}
 Can you create a game where the aim is to score exactly 21 points? The program should pick a random number between 1 and 10, which is added to the player's score. The player can then choose to stick with the score they have, or choose to add another random number to their score. The player wins the game if they manage to get to exactly 21 points. Remember to add comments to your program!
 
@@ -267,20 +270,22 @@ You can use (or change) parts of your gameshow program to make this new game. He
 
 + You can use a `while` loop to run the game as long as the player wants to keep playing:
 
-```{.language-python}
+```python
 while playing == True:
 ```
 
 + If the user enters `n` because they wish to stick with the score they have, you can set the `playing` variable to `False`:
 
-```{.language-python}
+```python
 if answer == 'n':
     playing = False
 ```
 
 + At the end of the program (outside of the `while` loop), you can say "Well done!" to the player if their score is exactly 21:
 
-```{.language-python}
+```python
 if score == 21:
     print("Well done!")
 ```
+
+## Save Your Project {.save}

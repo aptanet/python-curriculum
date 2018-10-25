@@ -1,17 +1,14 @@
 ---
-title: (Beta) Turtle Power
-level: Term 1
+title: Turtle Power
+level: Python 1
 language: en
 stylesheet: python
 embeds: "*.png"
-materials: ["Hexagon.py"]
+materials: ["Club Leader Resources/*.*"]
 ...
 
-#Heads Up! { .beta}
-This project is in Beta. That means we're still testing it, and there's a small chance there could be some bugs or typos. If you're a club leader trying out this project, please complete <a href="https://docs.google.com/forms/d/1eMCfpYe3v7eYu5M8rSqLKlmq7cczLCLHx66csgyUyVU/viewform?usp=send_form" target="_blank">this short questionnaire</a> (or email projects@codeclub.org.uk) to let us know how it went!
-
 #Introduction:  { .intro}
-In this project, you'll learn to use *loops* to easily repeat parts of your programs.
+In this project, you'll learn how to use a 'turtle' to draw awesome shapes and patterns.
 
 #Step 1: Hello, turtle! { .activity}
 
@@ -21,7 +18,7 @@ We're going to have some fun programming turtles. A turtle is a tiny robot that 
 
 + Let's make a turtle move around the screen, by running this short Python program:
 
-	```{.language-python}
+	```python
 	from turtle import *
 	shape("turtle")
 	speed(5)
@@ -54,7 +51,7 @@ We're going to have some fun programming turtles. A turtle is a tiny robot that 
 
 + What's your favourite colour? To make your drawings more interesting, you can also change the colour and the size of the pen drawing the line. Here's a simple example to try:
 
-	```{.language-python}
+	```python
 	from turtle import *
 	shape("turtle")
 	speed(8)
@@ -84,6 +81,8 @@ We're going to have some fun programming turtles. A turtle is a tiny robot that 
 
 	+ `penup()` lifts the pen from the screen, and `pendown()` lowers it again. This means that you can move the turtle without leaving a trail!
 
+## Save Your Project {.save}
+
 ## Challenge: Drawing shapes { .challenge}
 + Can you use the turtle instructions above to draw:
 	+ A square?
@@ -91,7 +90,9 @@ We're going to have some fun programming turtles. A turtle is a tiny robot that 
 
 + Can you draw a house? What else can you draw?
 
-# Step 2: Repeating yourself { .activity}
+## Save Your Project {.save}
+
+# Step 2: Repeating yourself { .activity }
 
 When drawing a square and a triangle, your program repeated the same commands over and over again. Let's get Python to repeat them for us!
 
@@ -99,7 +100,7 @@ When drawing a square and a triangle, your program repeated the same commands ov
 
 + Open up a new file, and run the following program:
 
-	```{.language-python}
+	```python
 	from turtle import *
 
 	speed(11)
@@ -118,7 +119,7 @@ When drawing a square and a triangle, your program repeated the same commands ov
 
 + Just like with an `if` statement, you should use the Tab key to indent the code that you want to repeat. Try changing the code, so that the line `forward(100)` is indented but the line `right(50)` isn't, like this:
 
-	```{.language-python}
+	```python
 	from turtle import *
 
 	speed(11)
@@ -135,7 +136,7 @@ When drawing a square and a triangle, your program repeated the same commands ov
 
 + Now that you know how to repeat commands, you can create complicated shapes and patterns really easily. Run this program:
 
-	```{.language-python}
+	```python
 	from turtle import *
 
 	speed(11)
@@ -154,7 +155,7 @@ When drawing a square and a triangle, your program repeated the same commands ov
 
 + Here's another example of what can be created using a `for` loop. What does this program draw?
 
-	```{.language-python}
+	```python
 	from turtle import *
 
 	speed(11)
@@ -169,6 +170,8 @@ When drawing a square and a triangle, your program repeated the same commands ov
 	done()
 	```
 
+## Save Your Project {.save}
+
 ## Challenge: Loopy shapes { .challenge}
 + Can you use a `for` loop to draw:
 	+ A pentagon? (five sides)
@@ -177,10 +180,12 @@ Remember that the angles of all the corners always add up to 360 degrees!
 
 + Can you draw a circle? You can move forward 1 pixel and turn 1 degree each time. How many times would you need to repeat these commands?
 
+## Save Your Project {.save}
+
 ## Challenge: Drawing patterns { .challenge}
 Can you use what you've learnt to draw awesome patterns? Here's an example:
 
-```{.language-python}
+```python
 from turtle import *
 
 speed(11)
@@ -197,22 +202,24 @@ done()
 
 ![screenshot](turtle_loopy.png)
 
+## Save Your Project {.save}
+
 ## Challenge: Variables and loops { .challenge}
 When drawing different shapes, you had to calculate how many degrees to turn for each corner yourself.
 
 Can you use a calculation, so that the computer works this out for you? To work out the number of degrees to turn, you can divide 360 by the number of sides in the shape:
 
-```{.language-python}
+```python
 sides = 4
 angle = 360 / sides
 ```
 
 `/` is the Python symbol for divide. Notice that the answer is stored in a variable called `angle`, which you can then use to draw your shape:
 
-```{.language-python}
+```python
 left(angle)
 ```
 
 You can then change the number stored in the `sides` variable and test that it works for any shape!
 
-
+## Save Your Project {.save}

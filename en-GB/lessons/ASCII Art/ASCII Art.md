@@ -1,14 +1,11 @@
 ---
-title: (Beta) ASCII Art
-level: Term 1
+title: ASCII Art
+level: Python 1
 language: en
 stylesheet: python
 embeds: "*.png"
-materials: ["AboutMe.py","Scarf.py"]
+materials: ["Project Resources/*.*"]
 ...
-
-#Heads up! { .beta}
-This project is in Beta. That means we're still testing it, and there's a small chance there could be some bugs or typos. If you're a club leader trying out this project, please complete <a href="https://docs.google.com/forms/d/1eMCfpYe3v7eYu5M8rSqLKlmq7cczLCLHx66csgyUyVU/viewform?usp=send_form" target="_blank">this short questionnaire</a> (or email projects@codeclub.org.uk) to let us know how it went!
 
 #Introduction:  { .intro}
 
@@ -24,7 +21,7 @@ Python allows you to turn a series of instructions into useful programs and fun 
 
 + Click `File → New Window`, and type the following into the window that appears:
 
-    ```{.language-python}
+    ```python
     print("Hello, how are you?")
     ```
 
@@ -46,12 +43,16 @@ Python allows you to turn a series of instructions into useful programs and fun 
 
 + Congratulations, you are now officially a Python programmer! Give yourself a pat on the back (or if you're feeling lazy, get someone else to do it for you).
 
+## Save Your Project {.save}
+
 ## Challenge: What’s on your mind? { .challenge}
 Change the program above to print something more interesting to the screen!
 
 ![screenshot](ascii-mind.png)
 
-#Step 2: About yourself { .activity}
+## Save Your Project {.save}
+
+#Step 2: About yourself { .activity .new-page}
 ## Activity Checklist { .check}
 
 + Let’s print something much more fun than text… ASCII art! ASCII art is creating pictures out of text. Here’s an example - it’s meant to be a dog!
@@ -60,7 +61,7 @@ Change the program above to print something more interesting to the screen!
 
     To make this masterpiece, you can type the following into the IDLE editor and run the program:
 
-    ```{.language-python}
+    ```python
     print("A picture of a dog...")
     print(" 0____  ")
     print("  ||||  ")
@@ -68,7 +69,7 @@ Change the program above to print something more interesting to the screen!
 
 + If you prefer, you can use 3 single quotes (`'''`) instead of speech marks, which allows you to print multiple lines of text with 1 print statement. Like this:
 
-    ```{.language-python}
+    ```python
     print('''
     A picture of a dog...
      0____
@@ -78,17 +79,21 @@ Change the program above to print something more interesting to the screen!
 
     If you run this program, you’ll see it prints the same dog as before.
 
+## Save Your Project {.save}
+
 ## Challenge: About yourself { .challenge}
 Write a Python program to tell others about yourself, by using text and ASCII art. You can create images of your hobbies, friends, family… anything you want! Here’s an example:
 
 ![screenshot](ascii-aboutMe.png)
+
+## Save Your Project {.save}
 
 #Step 3: Calculating text { .activity}
 ## Activity Checklist { .check}
 
 + Python can also do calculations using text! What do you get if you multiply `"hello"` by 5? Let’s ask Python, by running this program:
 
-    ```{.language-python}
+    ```python
     print("hello" * 5)
     ```
 
@@ -98,7 +103,7 @@ Write a Python program to tell others about yourself, by using text and ASCII ar
 
 + You can make the printed text above easier to read, by putting a space after the word `"hello"` in your program:
 
-    ```{.language-python}
+    ```python
     print("hello " * 5)
     ```
 
@@ -112,7 +117,7 @@ Write a Python program to tell others about yourself, by using text and ASCII ar
 
 + How about addition? What answer do you think `"hello " +  "world`" would give? Try it out, by running the following program:
 
-    ```{.language-python}
+    ```python
     print("hello " + "world")
     ```
 
@@ -120,10 +125,12 @@ Write a Python program to tell others about yourself, by using text and ASCII ar
 
     Does it give you the answer you expected?
 
+## Save Your Project {.save}
+
 ## Challenge: Words and numbers { .challenge}
 What does the following program print to the screen? See if you can guess correctly before running the program.
 
-```{.language-python}
+```python
 print("ha "*4)
 print("ba" + "na"*2)
 print("He" + "l"*2 + "o" + "!"*10)
@@ -131,12 +138,14 @@ print("He" + "l"*2 + "o" + "!"*10)
 
 Can you make up any words of your own?
 
+## Save Your Project {.save}
+
 #Step 4: ASCII patterns { .activity}
 ## Activity Checklist { .check}
 
 + Now that you know how to do calculations on text, now what? Why is it useful? Well, let’s say you wanted to draw an ASCII art rectangle that is 30 characters long and 3 characters high. You could either draw it the hard way, like this:
 
-    ```{.language-python}
+    ```python
     print("##############################")
     print("##############################")
     print("##############################")
@@ -144,7 +153,7 @@ Can you make up any words of your own?
 
     Or you could save time and draw it the easy way, like this:
 
-    ```{.language-python}
+    ```python
     print("#" * 30)
     print("#" * 30)
     print("#" * 30)
@@ -156,12 +165,14 @@ Can you make up any words of your own?
 
 + You could even use calculations to make interesting patterns, like this wave:
 
-    ```{.language-python}
+    ```python
     print("/\  "*10)
     print("  \/"*10)
     ```
 
     ![screenshot](ascii-wave.png)
+
+## Save Your Project {.save}
 
 ## Challenge: Code a scarf { .challenge}
 Your best friend is having an 11th birthday party, and as a gift you've decided to code them a scarf! Use calculations wherever possible to make your own scarf pattern.
@@ -169,3 +180,5 @@ Your best friend is having an 11th birthday party, and as a gift you've decided 
 If you're feeling generous, you could even code them a cake (including 11 candles) to go with it!
 
 ![screenshot](ascii-birthday.png)
+
+## Save Your Project {.save}
